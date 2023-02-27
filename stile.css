@@ -1,0 +1,124 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    padding: 10px;
+    background-color: rgba(0, 225, 255, 0.712);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+main{
+    height: 80%;
+    width: 80%;
+    background-color: rgba(111, 0, 255, 0.788);
+    border: 2px solid rgb(0, 0, 0);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  
+}
+h2{
+    color: honeydew;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    'titulo titulo titulo'
+    'partes1 partes1 partes3'
+    'partes2 partes2 partes3';
+    grid-template-rows: 1fr repeat(2, 2fr);
+    grid-template-columns: 2fr 2fr 1fr;
+
+}
+.container_titulo{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.parte1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    grid-area: partes1;
+}
+.parte2{
+  
+    display: grid;
+    grid-area: partes2;
+    justify-items: center;
+}
+.opciones{
+    color: honeydew;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=text]{
+    width: 40%;
+    height: 35px;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.parte3{
+   
+    grid-area: partes3;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.resultado{
+    width: 8%;
+    height: 50%;
+    border: 2px solid  white;
+    color: honeydew;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton{
+    background-color: aqua;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(248, 248, 248);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.boton:hover{
+    background-color: aquamarine;
+    color: aliceblue;
+}
+.termometro{
+    height: 50%;
+    width: 25%;
+    border: 1px solid rgb(241, 239, 239);
+    transform: rotate(180deg);
+}
+.termometro_mercurio{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+   
+}
